@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+        <nav>
+          <ul class="header-menu">
+            <li><a class="header-menu__item" href="./index.html">Студія</a></li>
+            <li><a class="header-menu__item header-menu__item--active" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="header-menu__item" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li>
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="header-contacts__link" href="tel:+380961111111">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Main content -->
+    <main>
+      <!--Section01 Portfolio-->
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="scr-reader">Портфоліо</h1>
+          <ul class="filters">
+            <li>
+              <button class="filters__btn" type="button">Усі</button>
+            </li>
+            <li>
+              <button class="filters__btn" type="button">Веб-сайти</button>
+            </li>
+            <li>
+              <button class="filters__btn" type="button">Додатки</button>
+            </li>
+            <li>
+              <button class="filters__btn" type="button">Дизайн</button>
+            </li>
+            <li>
+              <button class="filters__btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- <h1>Приклади робіт</h1> -->
+          <ul class="card">
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
+                  <img
+                    src="./images/project01-tekhnokriak.jpg"
+                    alt="Приклад вебсайту Технокряк"
+                    width="370"
+                  />
+                  <div class="card__overlay">
+                    <p class="card__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__descr">
+                  <h2 class="card__title">Технокряк</h2>
+                  <p class="card__tag">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
+                  <img
+                    src="./images/project02-poster.jpg"
+                    alt="Приклад дизайну постеру"
+                    width="370"
+                  />
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
+                  </div>
+                </div>
+                <div class="card__descr">
+                  <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="card__tag">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
+                  <img
+                    src="./images/project03-seafood.jpg"
+                    alt="Приклад додатку ресторану Сіфуд"
+                    width="370"
+                  />
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
+                  </div>
+                </div>
+                <div class="card__descr">
+                  <h2 class="card__title">Ресторан Seafood</h2>
+                  <p class="card__tag">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
+                  <img
+                    src="./images/project04-prime.jpg"
+                    alt="Приклад маркетингового проєкту Прайм "
+                    width="370"
+                  />
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
+                  </div>
+                </div>
+                <div class="card__descr">
+                  <h2 class="card__title">Проєкт Prime</h2>
+                  <p class="card__tag">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
+                  <img
+                    src="./images/project05-boxes.jpg"
+                    alt="Приклад додатку Боксез"
+                    width="370"
+                  />
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
+                  </div>
+                </div>
+                <div class="card__descr">
+                  <h2 class="card__title">Проєкт Boxes</h2>
+                  <p class="card__tag">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
+                  <img
+                    src="./images/project06-inspiration.jpg"
+                    alt="Приклад вебсайту Інспірейшен"
+                    width="370"
+                  />
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
+                  </div>
+                </div>
+                <div class="card__descr">
+                  <h2 class="card__title">Inspiration has no Borders</h2>
+                  <p class="card__tag">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
+                  <img
+                    src="./images/project07-limited.jpg"
+                    alt="Приклад дизайну видання Лімітед Едішен"
+                    width="370"
+                  />
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
+                  </div>
+                </div>
+                <div class="card__descr">
+                  <h2 class="card__title">Видання Limited Edition</h2>
+                  <p class="card__tag">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
+                  <img
+                    src="./images/project08-lab.jpg"
+                    alt="Приклад маркетингового проєкту Лаб "
+                    width="370"
+                  />
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
+                  </div>
+                </div>
+                <div class="card__descr">
+                  <h2 class="card__title">Проєкт LAB</h2>
+                  <p class="card__tag">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
+                  <img
+                    src="./images/project09-business.jpg"
+                    alt="Приклад додатку Гроуінг Бізнес"
+                    width="370"
+                  />
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
+                  </div>
+                </div>
+                <div class="card__descr">
+                  <h2 class="card__title">Growing Business</h2>
+                  <p class="card__tag">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="contacts">
+          <a class="logo contacts__logo" href="./index.html"><span>Web</span>Studio</a>
+          <address>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a
+                  class="contacts__link contacts__link--white"
+                  href="https://goo.gl/maps/RdGr7icwd7hFewiF6"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111"> +38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join">
+          <h3 class="join__title">Приєднуйтесь</h3>
+          <ul class="social-icons">
+            <li>
+              <a class="social-icons__ref" href="#">
+                <svg class="social-icons__image" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-icons__ref" href="#">
+                <svg class="social-icons__image" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-icons__ref" href="#">
+                <svg class="social-icons__image" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-icons__ref" href="#">
+                <svg class="social-icons__image" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <h3 class="subscribe__title">Підпишіться на розсилку</h3>
+          <form class="subscribe__form">
+            <input
+              class="subscribe__mail"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="E-mail"
+            />
+            <button class="button subscribe__button" type="submit">
+              Підписатися
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-iconsend"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+.footer {
+  padding: 60px 0;
+  background-color: var(--dark-grey);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 60px 165px;
+
+  }
+
+  @include desktop {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 70px;
+  }
+
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop {
+    align-items: flex-start;
+  }
+}
+
+.contacts__logo {
+  margin-bottom: 28px;
+  color: var(--white);
+}
+
+.contacts__list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.contacts__link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--opasity);
+  transition: color var(--time-animation) var(--cubic-bezier);
+
+  @include desktop {
+    text-align: left;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--blue);
+  }
+}
+
+.contacts__link--white {
+  color: var(--white);
+}
+
+.join__title,
+.subscribe__title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+
+  @include desktop {
+    text-align: left;
+  }
+}
+
+.contacts,
+.join {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 165px)/2);
+  }
+}
+
+.join {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 5px;
+    ;
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include desktop {
+    align-items: flex-start;
+    margin-left: auto;
+  }
+}
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include desktop {
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+
+.subscribe__mail {
+  display: inline-block;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  @include mobile {
+    width: 450px;
+  }
+  
+  @include desktop {
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
+
+.subscribe__mail::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe__button {
+  gap: 10px;
+  fill: var(--white);
+}

@@ -1,0 +1,76 @@
+.hero {
+  margin: 0 auto;
+  padding: 118px 0;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/header-bcg-mobile.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-bcg-mobile@2x.jpg);
+
+  }
+
+  @include tablet {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-bcg-tablet.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+  screen and (min-resolution: 192dpi) and (min-width: $tablet),
+  screen and (min-resolution: 2dppx) and (min-width: $tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-bcg-tablet@2x.jpg);
+  }
+
+  @include desktop {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-bcg-desktop.jpg);
+  }
+
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+  screen and (min-resolution: 192dpi) and (min-width: $desktop),
+  screen and (min-resolution: 2dppx) and (min-width: $desktop) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-bcg-desktop@2x.jpg);
+  }
+
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include desktop {
+    padding: 200px 0;
+    max-width: 1600px;
+  }
+
+}
+
+.hero__title {
+  max-width: 360px;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: calc(42/26);
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+
+  @include desktop {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: calc(60/44);
+  }
+}
+
+.button--hero {
+  margin: 30px auto 0;
+
+  @include desktop {
+    width: 216px;
+  }
+}
